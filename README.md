@@ -2,6 +2,19 @@
 
 Sync Cloudflare Zero-Trust tunnels from Traefik routes
 
+## Cloudflare setup
+1. Create an account on Cloudflare
+2. [Add a site](https://developers.cloudflare.com/fundamentals/get-started/setup/add-site/)
+3. Create a [tunnel](https://developers.cloudflare.com/cloudflare-one/connections/connect-apps/install-and-setup/tunnel-guide/#1-create-a-tunnel) and save the token
+4. Setup an [API token](https://dash.cloudflare.com/profile/api-tokens) with these capabilities:
+```
+  Account -> Cloudflare Tunnel -> Edit
+  Account -> Zero Trust -> Edit
+  User -> User Details -> Read
+  Zone -> DNS -> Edit
+```  
+
+
 ## Configuration
 
 | Environment Variable  | Type   | Description                                                  |
